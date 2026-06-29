@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI SQL Assistant</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>AI SQL Assistant</h1>
+    <p class="subtitle">Ask a question in plain English and get SQL plus results.</p>
+
+    <label for="question">Ask your question</label>
+    <textarea id="question" placeholder="Example: Show top 5 customers by revenue"></textarea>
+    <button id="generateBtn">Generate SQL</button>
+
+    <section>
+      <h2>Generated SQL</h2>
+      <pre id="sqlOutput">Your SQL will appear here...</pre>
+    </section>
+
+    <section>
+      <h2>Explanation</h2>
+      <div id="explanationOutput" class="card">The explanation will appear here...</div>
+    </section>
+
+    <section>
+      <h2>Results</h2>
+      <div id="resultOutput" class="card">Results will appear here...</div>
+    </section>
+  </div>
+
+  <script src="./app.js"></script>
+</body> 
+</html> 
